@@ -1,0 +1,953 @@
+/* Responsive Styles */
+@media (max-width: 1300px) and (min-width: 1080px){
+  .custom-banner {
+    padding-right: 150px; /* Add spacing from the right edge */
+  }
+}
+
+
+/* Media query for screen widths between 1079px and 1001px */
+@media (max-width: 1079px) and (min-width: 1001px) {
+    .custom-banner {
+      padding-right: 150px; /* Add spacing from the right edge */
+    }
+      .custom-banner::before {
+      width: 40%;
+    }
+    .custom-banner::after {
+      left: 25%;
+    }
+    .banner-content h1 {
+      font-size: 3rem;
+    }
+      
+      .banner-content p {
+        font-size: 1.5rem;
+      }
+    
+      .banner-content span {
+        font-size: 1rem;
+      }
+    
+      .hero-image {
+        width: 370px;
+        height: 370px;
+      }
+      .hero-image::before {
+    
+        width: 400px;
+        height: 400px;
+      }
+      .hero-image::after {
+        width: 355px;
+        height: 355px;
+      }
+    }
+    @media (max-width: 879px) and (min-width: 801px) {
+      .custom-banner {
+      padding-right: 360px; /* Add spacing from the right edge */
+      }
+    }
+    
+    
+    /* 1011px - 1024px */
+    @media screen and (max-width: 1024px) and (min-width: 1011px) {
+      .header {
+        padding: 10px 15px;
+      }
+    
+      .logo {
+        font-size: 1.6rem;
+      }
+    
+      .nav-links li a {
+        font-size: 0.9rem;
+      }
+
+      .banner {
+        margin-top: 126px;
+      }
+    
+      .custom-banner .banner-content h1 {
+        font-size: 2.5rem;
+      }
+    
+      .welcome-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    
+      .content-container {
+        max-width: 90%;
+      }
+      .header-section {
+        margin-top: 126px;
+      }
+    }
+    
+    /* 801px - 1010px */
+    @media screen and (max-width: 1010px) and (min-width: 801px) {
+    /* Container */
+    .container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically for tablet view */
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Logo */
+    .logo {
+      margin-bottom: 20px; /* Add space below the logo */
+    }
+    
+    /* Navigation */
+    .navigation {
+      width: 500px;
+      display: block;
+      justify-content: center; /* Center the navigation area */
+      align-items: center;
+      padding: 20px;
+      margin: 0 auto; /* Center the navigation container horizontally */
+    }
+    
+    /* Navigation Links */
+    .nav-links {
+      display: flex; /* Use Flexbox */
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      gap: 15px; /* Add spacing between items */
+      list-style: none;
+      padding: 0;
+      margin: 0 auto; /* Center the entire nav container */
+      justify-content: center; /* Center items on each row */
+      text-align: center; /* Center text inside each link */
+  }
+  
+    
+    /* Navigation List Items */
+    .nav-links li {
+      display: flex; /* Flexbox for the list items */
+      justify-content: center; /* Ensure each list item is centered */
+      align-items: center; /* Align items vertically */
+    }
+    
+    /* Navigation Links */
+    .nav-links li a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #fff;
+      padding: 10px 15px;
+      border: 2px solid transparent;
+      border-color: cyan;
+      border-radius: 5px; /* Optional: rounded corners */
+      transition: 0.3s;
+      width: auto; /* Let the link size depend on its content */
+    }
+    
+    .nav-links li a:hover {
+      border-color: cyan;
+      box-shadow: 0 0 10px cyan;
+    }
+    .custom-banner{
+      margin-top: 70px;
+      height: 570px;
+      padding-right: 50px; /* Add spacing from the right edge */
+    }
+      .custom-banner .banner-content h1 {
+        font-size: 2.3rem;
+      }
+    
+      .custom-banner .banner-content p {
+        font-size: 1.5rem;
+      }
+    
+      .cards {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center; /* Center align the cards themselves */
+      }
+    
+      .card {
+        width: 90%; /* Allow cards to take up most of the available width */
+        margin-bottom: 20px; /* Add spacing between stacked cards */
+        display: flex; /* Enable flexbox for inner content alignment */
+        flex-direction: column; /* Stack the card contents vertically */
+        align-items: center; /* Center align all contents */
+        text-align: center; /* Center align text */
+      }
+    
+      .card img {
+        max-width: 100px; /* Ensure image remains appropriately sized */
+        margin-bottom: 10px; /* Add spacing below the image */
+      }
+    
+      .card h3 {
+        font-size: 1.5rem; /* Adjust heading size for better readability */
+        margin: 10px 0; /* Add spacing above and below */
+        text-align: center; /* Ensure text is centered */
+      }
+    
+      .card p {
+        font-size: 1rem; /* Adjust paragraph size for better readability */
+        line-height: 1.4;
+      }
+    
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3 */
+        gap: 20px; /* Keep spacing consistent */
+      }
+    
+      .service-card {
+        width: 90%; /* Allow cards to adapt to available space */
+      }
+    
+      /* Center the third card */
+      .services-grid .service-card:nth-child(3) {
+        grid-column: span 2; /* Make it span across both columns */
+        margin: 0 auto; /* Center it horizontally */
+        width: 45%
+      }
+    
+      .section-title {
+        font-size: 1.8rem; /* Slightly smaller title */
+        width: 40%; /* Increase title width */
+      }
+    
+      .contact-section h1 {
+        font-size: 28px; /* Reduce the font size */
+      }
+    
+      .contact-section h3 {
+        font-size: 16px; /* Slightly smaller subheading */
+      }
+    
+      .contact-section p {
+        font-size: 13px; /* Adjust paragraph size */
+      }
+    
+      .form-group {
+        flex-direction: column; /* Stack input fields vertically */
+        gap: 15px;
+      }
+    
+      .form-group input {
+        width: 100%; /* Full-width input fields */
+      }
+    
+      .captcha-group {
+        flex-direction: column; /* Stack captcha and button vertically */
+        align-items: center;
+        gap: 15px;
+      }
+
+      .hero-image {
+        width: 340px;
+        height: 340px;
+      }
+      .hero-image::before {
+    
+        width: 370px;
+        height: 370px;
+      }
+      .hero-image::after {
+        width: 325px;
+        height: 325px;
+      }
+      .header-section {
+        margin-top: 233px;
+      }
+    }
+    
+    @media (max-width: 830px) and (min-width: 801px){
+      .custom-banner {
+        padding-right: 30px; /* Add spacing from the right edge */
+      }
+    }
+
+    /* 601px - 800px */
+    @media screen and (max-width: 800px) and (min-width: 601px) {
+      #particles-js {
+        height: 760px;  /* This keeps it covering the full page */
+      }
+    
+      .header {
+        flex-direction: column;
+        padding: 10px;
+      }
+    
+      .logo {
+        font-size: 1.2rem;
+      }
+    
+      .navigation {
+        position: relative;
+        z-index: 10;
+      }
+      
+      .nav-links {
+        display: none; /* Hide initially */
+        flex-direction: column;
+        background: rgb(0,95,133);
+        background: linear-gradient(312deg, rgba(0,95,133,1) 0%, rgba(64,49,101,1) 100%);
+        position: fixed;
+        top: 0px;
+        right: 0;
+        width: 300px; /* Sidebar width */
+        height: 100vh; /* Full-screen height */
+        padding: 100px 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        pointer-events: none; /* Prevent interaction when hidden */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: translateX(100%); /* Start off-screen */
+      }
+      
+      .nav-links.active {
+        display: flex; /* Show when active */
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0); /* Slide into view */
+      }
+      
+      .nav-links li {
+        margin: 5px 0;
+      }
+      
+      .nav-links li a {
+        display: block;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #0d1b2a; /* Dark text for contrast */
+        background: #fff;
+        padding: 15px 20px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      
+      .nav-links li a:hover {
+        background: rgb(0,95,133);
+        background: linear-gradient(312deg, rgba(0,95,133,1) 0%, rgba(64,49,101,1) 100%);
+        color: white;
+      }
+      
+      /* Hamburger Menu */
+      .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 20;
+      }
+      
+      .hamburger span {
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        transition: transform 0.3s ease, background 0.3s ease;
+      }
+      
+      /* Hamburger Close Icon (when active) */
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+      }
+      
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+      }
+    
+    
+    
+      /* Banner Container */
+      .banner {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 60px;
+      }
+    
+      .custom-banner {
+        position: relative;
+        width: 100vw; 
+        height: 700px; /* Allow height to adjust based on content */
+        display: flex;
+        flex-direction: column; /* Stack the pseudo-element and content */
+        align-items: center;
+        justify-content: center;
+        background: rgb(27,58,87);
+        background: linear-gradient(90deg, rgba(27,58,87,1) 0%, rgba(13,27,42,0.5326505602240896) 100%);
+        padding: 20px 0; /* Add padding for spacing */
+        overflow: hidden;
+      }
+    
+      /* Pseudo-element for ::before */
+      .custom-banner::before {
+        content: '';
+        position: relative; /* Relative so it adjusts with the banner container */
+        width: 100%;
+        height: 400px; /* Adjust height for a reasonable size */
+        background: url('../images/laptop.jpg') no-repeat center center; /* Use your image */
+        background-size: cover; /* Ensure the image fills the space */
+        margin-bottom: 20px; /* Add space below the image */
+        clip-path: none; /* Remove clip-path for simplicity */
+        z-index: 1;
+      }
+    
+      /* Remove ::after for mobile view */
+      .custom-banner::after {
+        display: none;
+      }
+    
+      /* Banner Content */
+      .banner-content {
+        position: relative;
+        z-index: 2;
+        text-align: center; /* Center-align text for mobile */
+        padding: 20px 10px;
+      }
+    
+      .banner-content h1 {
+        font-size: 2rem; /* Adjust size for smaller screens */
+        color: #ffffff;
+      }
+    
+      .banner-content p {
+        font-size: 1.5rem; /* Adjust size */
+        color: #ffffff;
+        margin: 10px 0;
+      }
+    
+      .banner-content span {
+        font-size: 1rem;
+        color: #ffffff;
+      }
+    
+      .welcome-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .image-container {
+        margin-bottom: 15px;
+      }
+    
+      .cards {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center; /* Center align the cards themselves */
+      }
+    
+      .card {
+        width: 90%; /* Allow cards to take up most of the available width */
+        margin-bottom: 20px; /* Add spacing between stacked cards */
+        display: flex; /* Enable flexbox for inner content alignment */
+        flex-direction: column; /* Stack the card contents vertically */
+        align-items: center; /* Center align all contents */
+        text-align: center; /* Center align text */
+      }
+    
+      .card img {
+        max-width: 100px; /* Ensure image remains appropriately sized */
+        margin-bottom: 10px; /* Add spacing below the image */
+      }
+    
+      .card h3 {
+        font-size: 1.5rem; /* Adjust heading size for better readability */
+        margin: 10px 0; /* Add spacing above and below */
+        text-align: center; /* Ensure text is centered */
+      }
+    
+      .card p {
+        font-size: 1rem; /* Adjust paragraph size for better readability */
+        line-height: 1.4;
+      }
+    
+      .services-grid {
+        grid-template-columns: repeat(1, 1fr); /* Single-column layout */
+        gap: 20px;
+      }
+    
+      .service-card {
+        padding: 20px; /* Reduce padding */
+        width: 100%; /* Allow card to take full width */
+      }
+    
+      .section-title {
+        font-size: 1.6rem; /* Smaller title */
+        width: 60%; /* Adjust title width */
+      }
+    
+      .service-card h3 {
+        font-size: 0.9rem; /* Smaller heading font */
+      }
+    
+      .service-card p {
+        font-size: 13px; /* Adjust paragraph font */
+      }
+    
+      .contact-section h1 {
+        font-size: 28px; /* Reduce the font size */
+      }
+    
+      .contact-section h3 {
+        font-size: 16px; /* Slightly smaller subheading */
+      }
+    
+      .contact-section p {
+        font-size: 13px; /* Adjust paragraph size */
+      }
+    
+      .form-group {
+        flex-direction: column; /* Stack input fields vertically */
+        gap: 15px;
+      }
+    
+      .form-group input {
+        width: 100%; /* Full-width input fields */
+      }
+    
+      .captcha-group {
+        flex-direction: column; /* Stack captcha and button vertically */
+        align-items: center;
+        gap: 15px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+      }
+    
+      .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+    
+      .hero-text p {
+        font-size: 1rem;
+      }
+    
+      .hero-image {
+        width: 300px;
+        height: 300px;
+      }
+    
+      .hero-image::before{
+        width: 280px;
+        height: 280px;
+        top: 10px;
+        left: 20px;
+      }
+      .hero-image::after {
+        width: 260px;
+        height: 260px;
+        top: 41px;
+        left: 15px;
+      }
+    
+      .hero-image img {
+        width: 280px;
+        height: 280px;
+      }
+    
+      .about-section {
+        flex-direction: column;
+        text-align: left;
+      }
+    
+      .image-container-about {
+        width: 40%;
+        margin-bottom: 20px;
+      }
+    
+      .text-container {
+        width: 100%;
+      }
+      .header-section {
+        margin-top: 126px;
+      }
+    }
+    
+    /*0px - 600px */
+    @media screen and (max-width: 600px) and (min-width: 0px) {
+      body {
+        font-size: 14px;
+      }
+    
+      #particles-js {
+        height: 760px;  /* This keeps it covering the full page */
+      }
+    
+      .header {
+        flex-direction: column;
+        padding: 10px;
+      }
+    
+      .logo {
+        font-size: 1.2rem;
+      }
+    
+      .navigation {
+        position: relative;
+        z-index: 10;
+      }
+      
+      .nav-links {
+        display: none; /* Hide initially */
+        flex-direction: column;
+        background: rgb(0,95,133);
+        background: linear-gradient(312deg, rgba(0,95,133,1) 0%, rgba(64,49,101,1) 100%);
+        position: fixed;
+        top: 0px;
+        right: 0;
+        width: 300px; /* Sidebar width */
+        height: 100vh; /* Full-screen height */
+        padding: 100px 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        pointer-events: none; /* Prevent interaction when hidden */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: translateX(100%); /* Start off-screen */
+      }
+      
+      .nav-links.active {
+        display: flex; /* Show when active */
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0); /* Slide into view */
+      }
+      
+      .nav-links li {
+        margin: 5px 0;
+      }
+      
+      .nav-links li a {
+        display: block;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #0d1b2a; /* Dark text for contrast */
+        background: #fff;
+        padding: 15px 20px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      
+      .nav-links li a:hover {
+        background: rgb(0,95,133);
+        background: linear-gradient(312deg, rgba(0,95,133,1) 0%, rgba(64,49,101,1) 100%);
+        color: white;
+      }
+      
+      /* Hamburger Menu */
+      .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 20;
+      }
+      
+      .hamburger span {
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        transition: transform 0.3s ease, background 0.3s ease;
+      }
+      
+      /* Hamburger Close Icon (when active) */
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+      }
+      
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+      }
+    
+      /* Banner Container */
+      .banner {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 60px;
+      }
+    
+      .custom-banner {
+        position: relative;
+        width: 100vw; 
+        height: 700px; /* Allow height to adjust based on content */
+        display: flex;
+        flex-direction: column; /* Stack the pseudo-element and content */
+        align-items: center;
+        justify-content: center;
+        background: rgb(27,58,87);
+        background: linear-gradient(90deg, rgba(27,58,87,1) 0%, rgba(13,27,42,0.5326505602240896) 100%);
+        padding: 20px 0; /* Add padding for spacing */
+        overflow: hidden;
+      }
+    
+      /* Pseudo-element for ::before */
+      .custom-banner::before {
+        content: '';
+        position: relative; /* Relative so it adjusts with the banner container */
+        width: 100%;
+        height: 400px; /* Adjust height for a reasonable size */
+        background: url('../images/laptop.jpg') no-repeat center center; /* Use your image */
+        background-size: cover; /* Ensure the image fills the space */
+        margin-bottom: 20px; /* Add space below the image */
+        clip-path: none; /* Remove clip-path for simplicity */
+        z-index: 1;
+      }
+    
+      /* Remove ::after for mobile view */
+      .custom-banner::after {
+        display: none;
+      }
+    
+      /* Banner Content */
+      .banner-content {
+        position: relative;
+        z-index: 2;
+        text-align: center; /* Center-align text for mobile */
+        padding: 20px 10px;
+      }
+    
+      .banner-content h1 {
+        font-size: 2rem; /* Adjust size for smaller screens */
+        color: #ffffff;
+      }
+    
+      .banner-content p {
+        font-size: 1.5rem; /* Adjust size */
+        color: #ffffff;
+        margin: 10px 0;
+      }
+    
+      .banner-content span {
+        font-size: 1rem;
+        color: #ffffff;
+      }
+    
+      .welcome-section {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+      }
+    
+      .cards {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center; /* Center align the cards themselves */
+      }
+    
+      .card {
+        width: 90%; /* Allow cards to take up most of the available width */
+        margin-bottom: 20px; /* Add spacing between stacked cards */
+        display: flex; /* Enable flexbox for inner content alignment */
+        flex-direction: column; /* Stack the card contents vertically */
+        align-items: center; /* Center align all contents */
+        text-align: center; /* Center align text */
+      }
+    
+      .card img {
+        max-width: 100px; /* Ensure image remains appropriately sized */
+        margin-bottom: 10px; /* Add spacing below the image */
+      }
+    
+      .card h3 {
+        font-size: 1.5rem; /* Adjust heading size for better readability */
+        margin: 10px 0; /* Add spacing above and below */
+        text-align: center; /* Ensure text is centered */
+      }
+    
+      .card p {
+        font-size: 1rem; /* Adjust paragraph size for better readability */
+        line-height: 1.4;
+      }
+    
+      .services {
+        padding: 30px 10px; /* Reduce padding */
+      }
+    
+      .services-grid {
+        grid-template-columns: 1fr; /* One column layout */
+        gap: 15px;
+      }
+    
+      .service-card {
+        padding: 15px; /* Reduce padding */
+        width: 100%;
+      }
+    
+      .section-title {
+        font-size: 1.4rem; /* Smaller title */
+        width: 80%; /* Allow title to take most of the screen width */
+      }
+    
+      .service-card h3 {
+        font-size: 0.8rem; /* Adjust heading font size */
+      }
+    
+      .service-card p {
+        font-size: 12px; /* Smaller text for smaller screens */
+        line-height: 1.2; /* Reduce line height */
+      }
+    
+      .icon {
+        font-size: 1.2rem; /* Adjust icon size */
+      }
+    
+      .contact-section h1 {
+        font-size: 28px; /* Reduce the font size */
+      }
+    
+      .contact-section h3 {
+        font-size: 16px; /* Slightly smaller subheading */
+      }
+    
+      .contact-section p {
+        font-size: 13px; /* Adjust paragraph size */
+      }
+    
+      .form-group {
+        flex-direction: column; /* Stack input fields vertically */
+        gap: 15px;
+      }
+    
+      .form-group input {
+        width: 100%; /* Full-width input fields */
+      }
+    
+      .captcha-group {
+        flex-direction: column; /* Stack captcha and button vertically */
+        align-items: center;
+        gap: 15px;
+      }
+    
+      footer .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .footer-logo {
+        justify-content: center; /* Center the image horizontally */
+        display: flex;
+      }
+    
+      .footer-logo img {
+        margin: 0 auto; /* Ensure the image is centered */
+      }
+    
+      footer .footer-left, footer .footer-center, footer .footer-right {
+        margin-bottom: 20px;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center; /* Centers the icons horizontally */
+        gap: 15px; /* Adds space between icons */
+        margin-top: 20px; /* Optional: Add spacing above the icons */
+      }
+
+      .header-content h1 {
+        font-size: 1.8rem;
+      }
+    
+      .header-content p {
+        font-size: 1rem;
+      }
+
+
+    
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+      }
+    
+      .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+    
+      .hero-text p {
+        font-size: 1rem;
+      }
+    
+      .hero-image {
+        width: 300px;
+        height: 300px;
+      }
+    
+      .hero-image::before{
+        width: 280px;
+        height: 280px;
+        top: 10px;
+        left: 20px;
+      }
+      .hero-image::after {
+        width: 260px;
+        height: 260px;
+        top: 41px;
+        left: 15px;
+      }
+    
+      .hero-image img {
+        width: 280px;
+        height: 280px;
+      }
+    
+      .about-section {
+        flex-direction: column;
+        text-align: left;
+      }
+    
+      .image-container-about {
+        display: none;
+      }
+    
+      .text-container {
+        width: 100%;
+      }
+      .header-section {
+        margin-top: 126px;
+      }
+      .header-overlay {
+        height: 50%;
+      }
+      .header-content {
+        top: 75%;
+      }
+    }
+@media screen and (max-width: 365px) and (min-width: 0px){
+  .header-content p {
+    width: 200px;
+  }
+}
+    
